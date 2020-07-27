@@ -1,0 +1,18 @@
+.Main {
+    margin: 5px auto;
+    direction: rtl;
+    align-items: center;
+    min-height: 50vh;
+    height: auto;
+    width: 100%;
+}
+
+.PostContainer {
+    margin-top: 30px;
+}
+
+.Title {
+    margin: 7px auto;
+    font-size: 1.2em;
+    font-family: "iransansBold";
+}

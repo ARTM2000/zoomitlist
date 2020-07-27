@@ -1,0 +1,11 @@
+.Main {
+    width: 1250px;
+    height: auto;
+    margin: 5px auto;
+    direction: rtl;
+}
+
+.Title {
+    font-size: 20px;
+    margin: 20px 5px 10px 5px;
+}

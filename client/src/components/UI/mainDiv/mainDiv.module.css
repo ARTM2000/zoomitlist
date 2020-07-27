@@ -1,0 +1,14 @@
+.Main {
+  width: 1250px;
+  height: auto;
+  margin: 5px auto;
+  direction: rtl;
+  position: relative;
+}
+
+@media (max-width: 1250px) {
+  .Main {
+    width: 100%;
+    height: auto;
+  }
+}

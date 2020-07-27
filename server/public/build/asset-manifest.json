@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d1927f1f.chunk.css",
+    "main.js": "/static/js/main.4ac3dcc6.chunk.js",
+    "main.js.map": "/static/js/main.4ac3dcc6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bb36f145.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bb36f145.js.map",
+    "static/js/2.ecb25a32.chunk.js": "/static/js/2.ecb25a32.chunk.js",
+    "static/js/2.ecb25a32.chunk.js.map": "/static/js/2.ecb25a32.chunk.js.map",
+    "static/css/3.c1193556.chunk.css": "/static/css/3.c1193556.chunk.css",
+    "static/js/3.b2acf337.chunk.js": "/static/js/3.b2acf337.chunk.js",
+    "static/js/3.b2acf337.chunk.js.map": "/static/js/3.b2acf337.chunk.js.map",
+    "static/css/4.94eacc4c.chunk.css": "/static/css/4.94eacc4c.chunk.css",
+    "static/js/4.9ff7e481.chunk.js": "/static/js/4.9ff7e481.chunk.js",
+    "static/js/4.9ff7e481.chunk.js.map": "/static/js/4.9ff7e481.chunk.js.map",
+    "static/css/5.f8cad330.chunk.css": "/static/css/5.f8cad330.chunk.css",
+    "static/js/5.47df61d5.chunk.js": "/static/js/5.47df61d5.chunk.js",
+    "static/js/5.47df61d5.chunk.js.map": "/static/js/5.47df61d5.chunk.js.map",
+    "static/js/6.55e98581.chunk.js": "/static/js/6.55e98581.chunk.js",
+    "static/js/6.55e98581.chunk.js.map": "/static/js/6.55e98581.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9fe87abd6875a2906f8d0f69f193526a.js": "/precache-manifest.9fe87abd6875a2906f8d0f69f193526a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/3.c1193556.chunk.css.map": "/static/css/3.c1193556.chunk.css.map",
+    "static/css/4.94eacc4c.chunk.css.map": "/static/css/4.94eacc4c.chunk.css.map",
+    "static/css/5.f8cad330.chunk.css.map": "/static/css/5.f8cad330.chunk.css.map",
+    "static/css/main.d1927f1f.chunk.css.map": "/static/css/main.d1927f1f.chunk.css.map",
+    "static/js/2.ecb25a32.chunk.js.LICENSE.txt": "/static/js/2.ecb25a32.chunk.js.LICENSE.txt",
+    "static/media/layout.module.css": "/static/media/IRANSansRegular.dd776747.eot",
+    "static/media/gmail.png": "/static/media/gmail.2c1a7560.png",
+    "static/media/linkedin.png": "/static/media/linkedin.fd0d5546.png",
+    "static/media/telegram.png": "/static/media/telegram.b37d6df3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bb36f145.js",
+    "static/js/2.ecb25a32.chunk.js",
+    "static/css/main.d1927f1f.chunk.css",
+    "static/js/main.4ac3dcc6.chunk.js"
+  ]
+}

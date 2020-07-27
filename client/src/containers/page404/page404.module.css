@@ -1,0 +1,130 @@
+.Main {
+  width: 1250px;
+  height: 100%;
+  margin: 5px auto;
+  direction: rtl;
+}
+
+.Holder {
+  margin: 80px auto;
+  text-align: center;
+  width: auto;
+}
+
+.HeadHolder {
+  position: relative;
+  height: 150px;
+  width: auto;
+  max-width: 280px;
+  margin: 10px auto 5px auto;
+}
+
+.FFour,
+.SFour {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 130px;
+  position: absolute;
+  top: -21%;
+}
+
+.FFour {
+  left: 8%;
+}
+
+.SFour {
+  right: 8%;
+}
+
+.AnimeHolder {
+  position: relative;
+  width: 38%;
+  height: 100%;
+  margin: 5px auto;
+  /* background-color: red; */
+
+  animation: animeHolder 7s infinite;
+}
+
+.BMoving {
+  position: absolute;
+  top: 5%;
+  width: 45%;
+  height: 70%;
+  /* background-color: blue; */
+  margin: 15% 31% 15% 24%;
+
+  animation: bMoving 7s infinite;
+}
+.SMoving {
+  position: relative;
+  /* background-color: red; */
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  transform: rotate(-40deg);
+
+  animation: sMoving 7s infinite;
+}
+
+.Circle {
+  position: absolute;
+  left: 18%;
+  width: 52%;
+  height: 52%;
+  border: 4px solid #a1a1a1;
+  border-radius: 50%;
+  background-color: #70c6ff36;
+}
+.Base {
+  position: absolute;
+  top: 95%;
+  left: 27%;
+  box-sizing: border-box;
+  width: 50%;
+  height: 5px;
+  background-color: #a1a1a1;
+  transform: rotate(90deg);
+}
+
+.Instructor {
+  margin: 40px auto;
+  position: relative;
+}
+
+.PageTitle {
+  font-size: 23px;
+}
+
+.NavigateLink {
+  all: unset;
+  cursor: pointer;
+  color: #e50000;
+  font-family: "iransans";
+}
+
+@keyframes animeHolder {
+    40% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes bMoving {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes sMoving {
+    0% {
+        transform: rotate(-40deg);
+    }
+
+    100% {
+        transform: rotate(320deg);
+    }
+}

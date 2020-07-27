@@ -1,0 +1,157 @@
+.Main {
+    width: 1250px;
+    height: auto;
+    min-height: 50px;
+    margin: 5px auto;
+    direction: rtl;
+}
+
+.Container {
+    width: 750px;
+    height: auto;
+    margin: 5px auto;
+    position: relative;
+}
+
+.AddNewCatgBackDrop {
+    background-color: #80808054;
+    z-index: 10000005;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.AddNewCatg {
+  direction: rtl;
+  position: absolute;
+  width: auto;
+  max-width: 760px;
+  min-width: 300px;
+  height: auto;
+  top: 6%;
+  left: 22.2%;
+  right: 22%;
+}
+
+.Holder,
+.Holder label {
+    z-index: 10000006;
+    /* width: auto; */
+    max-width: 750px;
+    min-width: 300px;
+    height: auto;
+    min-height: 80px;
+    margin: 25vh auto;
+    border: transparent;
+    border-radius: 10px;
+    position: relative;
+}
+
+.InputContainer {
+    display: flex;
+    width: 95%;
+    margin: 10px auto;
+    padding: 5px 0;
+}
+
+.SearchInput {
+  width: 92%;
+  padding: 10px 10px;
+  font-size: 25px;
+  border: transparent;
+  background-color: transparent;
+  font-family: "iransans";
+  outline: none;
+}
+
+.SearchInput::placeholder,
+.SearchInput::-moz-placeholder {
+  font-family: "iransans";
+}
+
+.Clear {
+  margin-top: 13px;
+  width: 40px;
+  height: 40px;
+  border: transparent;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.Clear:hover {
+  background-color: rgb(189, 189, 189, 0.25);
+}
+
+.Cross1,
+.Cross2 {
+  width: 20px;
+  height: 2.5px;
+  position: absolute;
+  top: 48%;
+  left: 25%;
+  background-color: #979797;
+  cursor: pointer;
+}
+
+.Cross1 {
+  transform: rotate(45deg);
+}
+.Cross2 {
+  transform: rotate(-45deg);
+}
+
+.Result {
+  direction: rtl;
+  position: absolute;
+  border: transparent;
+  border-radius: 10px;
+  right: 0%;
+  top: 108%;
+  width: 750px;
+  height: auto;
+  max-height: 250px;
+  overflow-y: auto;
+  margin: 0% auto;
+  padding: 4px 0;
+  z-index: 1000;
+}
+
+.CatgItem_Light {
+  margin: 5px 10px;
+  padding: 8px 10px;
+  border: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  color: black;
+}
+
+.CatgItem_Dark {
+  margin: 5px 10px;
+  padding: 8px 10px;
+  border: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #979797;
+}
+.CatgItem_Light:hover {
+  background-color: #e0e0e0;
+}
+.CatgItem_Dark:hover {
+  background-color: #575757;
+}
+
+@media (max-width: 780px) {
+  .Result {
+    width: auto;
+    min-width: 100%;
+    right: 0%;
+  }
+}
+
+@media(max-width: 749px) {
+    .Container {
+        width: 100%;
+    }
+}

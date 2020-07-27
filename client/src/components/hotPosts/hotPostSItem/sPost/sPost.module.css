@@ -1,0 +1,197 @@
+.Main {
+  display: flex;
+  flex-direction: row;
+  width: 48%;
+  height: 125px;
+  border: transparent;
+  border-radius: 10px 12px 10px 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.082);
+  margin: 9px auto;
+  position: relative;
+}
+.Main_Dark {
+  display: flex;
+  flex-direction: row;
+  width: 48%;
+  height: 125px;
+  border: transparent;
+  border-radius: 10px 12px 12px 10px;
+  background-color: #444444;
+  box-shadow: 0 5px 10px #00000060;
+  margin: 9px auto;
+  position: relative;
+}
+.Main a {
+  color: black;
+  text-decoration: none;
+}
+.Main_Dark a {
+  color: white;
+  text-decoration: none;
+}
+
+.ImgContainer {
+  width: 40%;
+  height: 124.8px;
+  border: transparent;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #979797;
+}
+.ImgContainer img {
+  width: 100%;
+  height: 100%;
+  border: transparent;
+  border-radius: 0px 10px 10px 0px;
+}
+.Content {
+  width: 66%;
+  height: 100%;
+}
+
+.Title {
+  margin: 8px 13px 12px 5px;
+  width: 80%;
+}
+
+.AdditionalInfo {
+  position: absolute;
+  top: 66%;
+  margin: 10px 10px 10px auto;
+  font-size: 12.5px;
+  color: #868686;
+}
+
+.PreLoad_ImgContainer {
+  width: 130px;
+  height: 124.8px;
+  border: transparent;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #979797;
+  animation: PLImageContainer 3s infinite;
+}
+
+@keyframes PLImageContainer {
+  0% {
+    background-color: hsl(0, 0%, 59%);
+  }
+  5% {
+    background-color: hsl(0, 0%, 55%);
+  }
+  10% {
+    background-color: hsl(0, 0%, 50%);
+  }
+  15% {
+    background-color: hsl(0, 0%, 45%);
+  }
+  20% {
+    background-color: hsl(0, 0%, 50%);
+  }
+  25% {
+    background-color: hsl(0, 0%, 55%);
+  }
+  30% {
+    background-color: hsl(0, 0%, 55%);
+  }
+  35% {
+    background-color: hsl(0, 0%, 50%);
+  }
+  40% {
+    background-color: hsl(0, 0%, 45%);
+  }
+  45% {
+    background-color: hsl(0, 0%, 50%);
+  }
+  50% {
+    background-color: hsl(0, 0%, 55%);
+  }
+  55% {
+    background-color: hsl(0, 0%, 59%);
+  }
+  60% {
+    background-color: hsl(0, 0%, 55%);
+  }
+  65% {
+    background-color: hsl(0, 0%, 50%);
+  }
+  70% {
+    background-color: hsl(0, 0%, 45%);
+  }
+  75% {
+    background-color: hsl(0, 0%, 50%);
+  }
+  80% {
+    background-color: hsl(0, 0%, 55%);
+  }
+  85% {
+    background-color: hsl(0, 0%, 55%);
+  }
+  90% {
+    background-color: hsl(0, 0%, 50%);
+  }
+  95% {
+    background-color: hsl(0, 0%, 45%);
+  }
+  100% {
+    background-color: hsl(0, 0%, 50%);
+  }
+}
+
+@media(max-width: 1100px) {
+  .AdditionalInfo {
+    top: 60%;
+    margin-left: 10px;
+  }
+}
+
+@media(max-width: 1080px) {
+
+  .Main,
+  .Main_Dark {
+    width: 100%;
+    height: 130px;
+  }
+
+  .ImgContainer,
+  .PreLoad_ImgContainer {
+    width: 40%;
+    height: 100%;
+  }
+  
+  .AdditionalInfo {
+    top: 60%;
+    margin-left: 10px;
+  }
+
+  .SThree {
+    display: none;
+  }
+}
+
+@media (max-width: 705px) {
+  .Main, .Main_Dark {
+    /* height: 200px; */
+  }
+}
+
+@media (max-width: 520px) {
+  .ImgContainer,
+  .PreLoad_ImgContainer {
+    width: 110px;
+    height: 110px;
+    border-radius: 0 10px 0 0;
+  }
+
+  .Content {
+    width: auto;
+    max-width: 66%;
+  }
+
+  .ImgContainer img {
+    border-radius: 0 10px 0 0;
+  }
+
+  .AdditionalInfo {
+    top: 62%;
+  }
+}

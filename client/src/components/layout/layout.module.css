@@ -1,0 +1,618 @@
+@font-face {
+  src: url("../../assets/fonts/IRANSansRegular.woff") format("truetype");
+  src: url("../../assets/fonts/IRANSansRegular.eot") format("truetype");
+  src: url("../../assets/fonts/IRANSansRegular.ttf") format("truetype");
+  font-family: "iransans";
+}
+
+@font-face {
+  src: url("../../assets/fonts/bold/IRANSansBold.eot") format("truetype");
+  src: url("../../assets/fonts/bold/IRANSansBold.ttf") format("truetype");
+  src: url("../../assets/fonts/bold/IRANSansBold.woff") format("truetype");
+  font-family: "iransansBold";
+}
+
+.Main {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  font-family: "iransans";
+  font-size: 18px;
+  font-weight: 500;
+  outline: none;
+  background-color: #f3f3f3;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+.Main_Dark {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  font-family: "iransans";
+  font-size: 18px;
+  outline: none;
+  background-color: #292828;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "iransansBold";
+  font-weight: 500;
+  font-size: 1.17em;
+}
+h2 {
+  font-size: 0.9em;
+  font-weight: 500;
+  font-family: "iransansBold";
+}
+h3 {
+  font-family: "iransansBold";
+  font-weight: 500;
+  font-size: 1.05em;
+}
+
+h1, h2, h3 {
+  line-height: 28px;
+}
+
+.NavContainer {
+  /* position: absolute; */
+  width: 100%;
+  position: fixed;
+  z-index: 10000000;
+}
+
+.Navigation_Light {
+  z-index: 3000;
+  direction: rtl;
+  display: flex;
+  width: 1250px;
+  position: static;
+  top: 0;
+  padding: 0px 30px 0px 30px;
+  background-color: #f3f3f3;
+  margin: 0px auto;
+}
+.Navigation_Dark {
+  z-index: 3000;
+  direction: rtl;
+  display: flex;
+  width: 1250px;
+  position: static;
+  top: 0;
+  padding: 0px 30px 0px 30px;
+  flex-direction: row;
+  background-color: #292828;
+  margin: 0px auto;
+}
+
+.Navigation_Light ul,
+.Navigation_Dark ul {
+  display: flex;
+  flex-flow: row;
+  margin: auto 0px auto 0px;
+  padding-inline-start: 10px;
+}
+
+.Navigation_Light ul li,
+.Navigation_Dark ul li {
+  list-style-type: none;
+  margin: 0px 0px 0 20px;
+}
+
+.Navigation_Light ul li a,
+.Navigation_Dark ul li a {
+  text-decoration: none;
+  color: #a1a1a1;
+  padding: 0px 2px 5px 2px;
+  text-align: center;
+  min-width: 30px;
+}
+
+.ActiveNav {
+  color: #e50000;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.SearchBox {
+  height: 36px;
+  margin: 8px 15px;
+  padding: 15px 0;
+  color: #a1a1a1;
+  display: flex;
+}
+.SearchBox label {
+  display: flex;
+}
+
+.SearchInput {
+  width: 250px;
+  height: 30px;
+  padding: 2px 5px;
+  color: #a1a1a1;
+  margin: auto 0;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  border-bottom: 2px solid #a1a1a1;
+  background-color: transparent;
+  font-size: 19px;
+  font-family: "iransans";
+  outline: transparent;
+  display: 1;
+  animation: onShowSearchBar 0.15s linear;
+}
+.SearchInput::placeholder {
+  color: #a1a1a1;
+}
+.SearchInput::-moz-placeholder {
+  color: #a1a1a1;
+}
+.SearchInput_First {
+  display: none;
+}
+.SearchInput_Hide {
+  width: 0px;
+  height: 30px;
+  padding: 2px 5px;
+  color: #a1a1a1;
+  margin: auto 0;
+  border: transparent;
+  background-color: transparent;
+  font-size: 19px;
+  font-family: "iransans";
+  outline: none;
+  cursor: context-menu;
+  animation: onHideSearchBar 0.15s linear;
+}
+.SearchInput_Hide::placeholder {
+  color: #a1a1a1;
+}
+.SearchInput_Hide::-moz-placeholder {
+  color: #a1a1a1;
+}
+
+.SearchIcon {
+  margin: auto 0px auto 5px;
+  width: 24px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.SearchIcon img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.ModeView {
+  color: #a1a1a1;
+  padding: 17px 0px;
+  margin: auto 0px;
+  display: flex;
+}
+
+.ModeView span {
+  padding: 1px 0px;
+  cursor: pointer;
+}
+
+.ToggleBtn {
+  width: 55px;
+  height: 30px;
+  background-color: #a1a1a1;
+  border-radius: 20px;
+  border: transparent;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.MovePartBtn {
+  width: 22px;
+  height: 22px;
+  margin: 4px 4px;
+  border-radius: 15px;
+  border: transparent;
+  background-color: white;
+  animation: lightModeTglBtn 0.15s linear;
+}
+.MovePartBtn_First {
+  width: 22px;
+  height: 22px;
+  margin: 4px 4px;
+  border-radius: 15px;
+  border: transparent;
+  background-color: white;
+}
+.MovePartBtn_Dark {
+  width: 23px;
+  height: 23px;
+  margin: 4px 28px 4px 4px;
+  border-radius: 15px;
+  border: transparent;
+  background-color: #292828;
+  animation: nightModeTglBtn 0.15s linear;
+}
+.MovePartBtn_Dark_Local {
+  width: 23px;
+  height: 23px;
+  margin: 4px 28px 4px 4px;
+  border-radius: 15px;
+  border: transparent;
+  background-color: #292828;
+}
+
+.LogoContainer {
+  width: 150px;
+  padding: 11px 0px 11px 0.5%;
+  margin: auto auto auto 0px;
+}
+.LogoContainer a img {
+  width: 100%;
+  height: auto;
+}
+
+.SNavContainer {
+  display: none;
+}
+
+.Container {
+  /* width: 100%; */
+  height: auto;
+  /* min-height: 100vh; */
+  margin: 0px 3%;
+  padding: 75px 0 5px 0;
+}
+
+@keyframes nightModeTglBtn {
+  0% {
+    width: 22px;
+    height: 22px;
+    margin: 4px 4px;
+    border-radius: 15px;
+    border: transparent;
+    background-color: white;
+  }
+
+  100% {
+    width: 22px;
+    height: 22px;
+    margin: 4px 28px 4px 4px;
+    border-radius: 15px;
+    border: transparent;
+    background-color: #292828;
+  }
+}
+
+@keyframes lightModeTglBtn {
+  0% {
+    width: 22px;
+    height: 22px;
+    margin: 4px 28px 4px 4px;
+    border-radius: 15px;
+    border: transparent;
+    background-color: #292828;
+  }
+  100% {
+    width: 22px;
+    height: 22px;
+    margin: 4px 4px;
+    border-radius: 15px;
+    border: transparent;
+    background-color: white;
+  }
+}
+
+@keyframes onShowSearchBar {
+  0% {
+    width: 0px;
+    height: 30px;
+    padding: 2px 5px;
+    margin: auto 0;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: 2px solid rgb(185, 185, 185);
+    background-color: transparent;
+    font-size: 19px;
+    font-family: "iransans";
+    outline: none;
+    display: 0;
+  }
+  100% {
+    width: 250px;
+    height: 30px;
+    padding: 2px 5px;
+    margin: auto 0;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: 2px solid rgb(185, 185, 185);
+    background-color: transparent;
+    font-size: 19px;
+    font-family: "iransans";
+    outline: none;
+    display: 1;
+  }
+}
+
+@keyframes onHideSearchBar {
+  0% {
+    width: 250px;
+    height: 30px;
+    padding: 2px 5px;
+    margin: auto 0;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: 2px solid rgb(185, 185, 185);
+    background-color: transparent;
+    font-size: 19px;
+    font-family: "iransans";
+    outline: none;
+    display: 1;
+  }
+  100% {
+    width: 0;
+    height: 30px;
+    padding: 2px 5px;
+    margin: auto 0;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: 2px solid rgb(185, 185, 185);
+    background-color: transparent;
+    font-size: 19px;
+    font-family: "iransans";
+    outline: none;
+    display: none;
+  }
+}
+
+@media (max-width: 1280px) {
+  .Navigation_Light,
+  .Navigation_Dark {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .NavContainer,
+  .Navigation_Light,
+  .Navigation_Dark {
+    display: none !important;
+  }
+
+  .SNavContainer {
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    position: fixed;
+    z-index: 10000000;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .SNavContainer nav {
+    display: flex;
+    width: 100%;
+    /* position: relative; */
+  }
+
+  .MenuIcon {
+    z-index: 10000003;
+    margin: 6px 5% 3px auto;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .Cross1,
+  .Cross2,
+  .Cross3,
+  .Cross1_DeActive,
+  .Cross2_DeActive,
+  .Cross3_DeActive {
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    background-color: #828282;
+    right: 9%;
+    outline: none;
+  }
+
+  .Cross1 {
+    top: 16%;
+  }
+  .Cross2 {
+    top: 48%;
+  }
+  .Cross3 {
+    top: 81%;
+  }
+
+  .Cross1_DeActive {
+    top: 16%;
+    animation: cross1_D 0.2s linear;
+  }
+  .Cross2_DeActive {
+    top: 48%;
+    animation: cross2_D 0.25s linear;
+  }
+  .Cross3_DeActive {
+    top: 81%;
+    animation: cross3_D 0.2s linear;
+  }
+
+  .Cross1_Active,
+  .Cross2_Active,
+  .Cross3_Active {
+    width: 35px;
+    height: 3px;
+    position: absolute;
+    background-color: #828282;
+    right: 0%;
+    outline: none;
+  }
+
+  .Cross1_Active {
+    top: 40%;
+    transform: translateY(48%) rotate(45deg);
+    animation: cross1 0.2s linear;
+  }
+  .Cross2_Active {
+    display: none;
+  }
+  .Cross3_Active {
+    top: 40%;
+    transform: translateY(48%) rotate(-45deg);
+    animation: cross3 0.2s linear;
+  }
+
+  .BackDrop {
+    z-index: 10000001;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+  }
+
+  .MenuList,
+  .MenuList_Active,
+  .MenuList_DeActive {
+    z-index: 10000002;
+    background-color: #c2c1c1f5;
+    top: 0;
+    width: 40%;
+    min-width: 250px;
+    position: absolute;
+    height: 100vh;
+    outline: none;
+  }
+
+  .MenuList {
+    transform: translateX(1000vw);
+  }
+
+  .MenuList_Active {
+    animation: MLActive 0.2s linear;
+  }
+
+  .MenuList_DeActive {
+    transform: translateX(1000vw);
+    animation: MLDeActive 0.2s linear;
+  }
+
+  .MenuList_Active ul,
+  .MenuList_DeActive ul {
+    display: block;
+    flex-flow: row;
+    margin: 35px 0px auto 0px;
+    padding-inline-start: 10px;
+    width: 48%;
+  }
+
+  .MenuList_Active ul li,
+  .MenuList_DeActive ul li {
+    list-style-type: none;
+    margin: 30px 8% 10px 20px;
+    width: 75%;
+  }
+
+  .MenuList_Active ul li a,
+  .MenuList_DeActive ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 2px 5px 2px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .SModeContainer {
+    position: relative;
+    width: 100%;
+    height: 50px;
+  }
+  .SModeChanger {
+    position: absolute;
+    top: 12.5%;
+    right: 32%;
+  }
+
+  .SLogoContainer {
+    margin: 6px auto 3px 5%;
+    width: 150px;
+    height: 100%;
+  }
+  .SLogoContainer img {
+    width: 100%;
+    height: auto;
+  }
+
+  @keyframes cross1 {
+    0% {
+      transform: translateY(16%);
+    }
+    100% {
+      transform: translateY(48%) rotate(45deg);
+    }
+  }
+  @keyframes cross3 {
+    0% {
+      transform: translateY(81%);
+    }
+    100% {
+      transform: translateY(48%) rotate(-45deg);
+    }
+  }
+
+  @keyframes cross1_D {
+    0% {
+      transform: translateY(48%) rotate(45deg);
+    }
+    100% {
+      transform: rotate(0deg) translateY(16%);
+    }
+  }
+  @keyframes cross2_D {
+    0% {
+      display: none;
+    }
+    100% {
+      display: 1;
+    }
+  }
+  @keyframes cross3_D {
+    0% {
+      transform: translateY(48%) rotate(-45deg);
+    }
+    100% {
+      transform: rotate(0deg) translateY(81%);
+    }
+  }
+
+  @keyframes MLActive {
+    0% {
+      transform: translateX(100vw);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes MLDeActive {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100vw);
+    }
+  }
+}

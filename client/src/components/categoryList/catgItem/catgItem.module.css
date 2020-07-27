@@ -1,0 +1,89 @@
+.Main {
+    display: inline-block;
+    background-color: #bdbdbd;
+    width: auto;
+    height: 30px;
+    max-width: 230px;
+    padding: 5px 10px;
+    margin: 5px 5px;
+    border: transparent;
+    border-radius: 10px;
+    font-size: 1.05em;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.CatgName {
+    margin: 0px auto;
+}
+
+.Main_Loading {
+    display: inline-block;
+    background-color: #bdbdbd;
+    width: 13%;
+    height: 30px;
+    padding: 5px 10px;
+    margin: 5px 5px;
+    border: transparent;
+    border-radius: 10px;
+    font-size: 1.05em;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    animation: boxLoading 1s infinite;
+}
+
+@keyframes boxLoading {
+    0%{
+        background-color: #bdbdbd;
+    }
+    10%{
+        background-color: #a5a5a5;
+    }
+    20%{
+        background-color: #979797;
+    }
+    30%{
+        background-color: #838383;
+    }
+    40%{
+        background-color: #818181;
+    }
+    50%{
+        background-color: #777777;
+    }
+    60%{
+        background-color: #818181;
+    }
+    70%{
+        background-color: #838383;
+    }
+    80%{
+        background-color: #979797;
+    }
+    90%{
+        background-color: #a5a5a5;
+    }
+    100%{
+        background-color: #bdbdbd;
+    }
+}
+
+@media (max-width: 800px) {
+    .Main_Loading {
+        width: 20%;
+    }
+}
+
+@media (max-width: 636px) {
+    .Main_Loading {
+        width: 28%;
+    }
+}
+
+@media (max-width: 450px) {
+    .Main_Loading {
+        width: 40%;
+    }
+}

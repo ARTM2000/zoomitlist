@@ -1,0 +1,33 @@
+.Container {
+    margin: 15vh auto 10px auto;
+    width: 90%;
+    text-align: center;
+}
+
+.Container h1 {
+    font-size: 25px;
+}
+
+.Container a {
+    text-decoration: none;
+}
+
+.Container strong {
+    font-family: "iransansBold";
+}
+
+.SocialMedia {
+    justify-content: center;
+    width: auto;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 10%;
+}
+
+.SocialMedia a img {
+    display: inline-block;
+    width: 30px;
+    height: auto;
+    margin: 0 10px;
+}

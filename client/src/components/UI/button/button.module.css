@@ -1,0 +1,28 @@
+.Normal,
+.Important,
+.LowImp {
+  padding: 5px 15px;
+  font-family: "iransans";
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.Normal {
+  border: 2px solid #e50000;
+  color: #e50000;
+  background-color: transparent;
+}
+
+.Important {
+  border: 2px solid #e50000;
+  color: white;
+  background-color: #e50000;
+}
+
+.LowImp {
+  color: #e50000;
+  border: transparent;
+  background-color: transparent;
+}

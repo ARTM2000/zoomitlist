@@ -1,0 +1,36 @@
+.Main {
+  width: 25%;
+  height: 10%;
+  justify-content: space-between;
+  margin: auto;
+  direction: rtl;
+  display: flex;
+  top: 90%;
+}
+
+.SlideCircle {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: transparent;
+  border-radius: 4px;
+  background-color: #868686;
+  cursor: pointer;
+}
+.SlideCircle:hover {
+  background-color: #4e4e4e;
+}
+.SlideCircle_Active {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: transparent;
+  border-radius: 4px;
+  background-color: #e50000;
+}
+
+@media(max-width: 800px) {
+  .Main {
+    width: 35%;
+  }
+}

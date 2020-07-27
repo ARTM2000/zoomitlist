@@ -1,0 +1,119 @@
+.Main {
+  width: 1250px;
+  height: auto;
+  margin: 5px auto;
+  direction: rtl;
+  position: relative;
+}
+
+.InputContainer,
+.InputContainer label {
+  width: 730px;
+  margin: 5px auto;
+  display: flex;
+  position: relative;
+}
+
+.SearchInput {
+  width: 91%;
+  padding: 10px 10px;
+  font-size: 25px;
+  border: transparent;
+  background-color: transparent;
+  font-family: "iransans";
+  outline: none;
+}
+
+.SearchInput::placeholder,
+.SearchInput::-moz-placeholder {
+  font-family: "iransans";
+}
+
+.Clear {
+  margin-top: 13px;
+  width: 40px;
+  height: 40px;
+  border: transparent;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.Clear:hover {
+  background-color: rgb(189, 189, 189, 0.25);
+}
+
+.Cross1,
+.Cross2 {
+  width: 20px;
+  height: 2.5px;
+  position: absolute;
+  top: 48%;
+  left: 25%;
+  background-color: #979797;
+  cursor: pointer;
+}
+
+.Cross1 {
+  transform: rotate(45deg);
+}
+.Cross2 {
+  transform: rotate(-45deg);
+}
+
+.Result {
+  direction: rtl;
+  position: absolute;
+  border: transparent;
+  border-radius: 10px;
+  right: 0%;
+  top: 110%;
+  width: 730px;
+  height: auto;
+  max-height: 400px;
+  overflow-y: auto;
+  margin: 0% auto;
+  padding: 4px 0;
+  z-index: 1000;
+}
+
+.CatgItem_Light {
+  margin: 5px 10px;
+  padding: 8px 10px;
+  border: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  color: black;
+}
+
+.CatgItem_Dark {
+  margin: 5px 10px;
+  padding: 8px 10px;
+  border: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #979797;
+}
+.CatgItem_Light:hover {
+  background-color: #e0e0e0;
+}
+.CatgItem_Dark:hover {
+  background-color: #575757;
+}
+
+@media (max-width: 780px) {
+
+  .InputContainer,
+  .InputContainer label {
+    width: 90%;
+  }
+
+  .SearchInput {
+    min-width: 95%;
+  }
+
+  .Result {
+    width: auto;
+    min-width: 100%;
+    right: 0%;
+  }
+}

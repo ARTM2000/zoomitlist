@@ -1,0 +1,24 @@
+.Main {
+  display: flex;
+  flex-direction: row;
+  margin: 5px auto 10px auto;
+  background-color: transparent;
+  direction: rtl;
+  width: 1250px;
+  height: auto;
+  min-height: 400px;
+  margin: 5px auto;
+  position: relative;
+}
+
+@media (max-width: 1300px) {
+  .Main {
+    width: 100%;
+  }
+} 
+
+@media(max-width: 705px) {
+  .Main {
+    display: block;
+  }
+}

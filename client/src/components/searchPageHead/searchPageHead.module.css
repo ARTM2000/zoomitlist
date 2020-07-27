@@ -1,0 +1,96 @@
+.Main {
+  width: 100%;
+  height: auto;
+  direction: rtl;
+}
+
+.Main_NoContent {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  direction: rtl;
+}
+
+.Container {
+  margin: 2px auto;
+  width: 730px;
+  position: relative;
+  /* border-bottom: 2px solid; */
+}
+
+.Count {
+  display: block;
+  font-family: "iransans";
+  word-wrap: wrap;
+  word-break: break-all;
+  flex-wrap: wrap;
+}
+
+.Content label {
+  width: 730px;
+  margin: 5px auto;
+  display: flex;
+  position: relative;
+  border: 2px solid gray;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  padding: 5px 0;
+}
+
+.Content input,
+.Content label input {
+  width: 91%;
+  padding: 10px 10px;
+  font-size: 25px;
+  border: transparent;
+  background-color: transparent;
+  font-family: "iransans";
+  outline: none;
+}
+
+.Clear {
+  margin-top: 13px;
+  width: 40px;
+  height: 40px;
+  border: transparent;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.Clear:hover {
+  background-color: rgb(189, 189, 189, 0.25);
+}
+
+.Cross1,
+.Cross2 {
+  width: 20px;
+  height: 2.5px;
+  position: absolute;
+  top: 48%;
+  left: 25%;
+  background-color: #979797;
+  cursor: pointer;
+}
+
+.Cross1 {
+  transform: rotate(45deg);
+}
+.Cross2 {
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 800px) {
+  .Container {
+    width: 90%;
+    margin: 2px auto;
+  }
+
+  .Content label {
+    width: 100%;
+  }
+
+  .Content label input {
+    width: 100%;
+  }
+}

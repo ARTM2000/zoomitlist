@@ -1,0 +1,32 @@
+{
+  "name": "web-log-scrapping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "dev-api": "nodemon App.js",
+    "dev-bw": "nodemon BackgroundWorker.js",
+    "start-api": "node --max-old-space-size=256 App.js",
+    "start-bw": " node --max-old-space-size=256 BackgroundWorker.js"
+  },
+  "engines": {
+    "node": "14.2.0"
+  },
+  "keywords": [
+    "web",
+    "websites",
+    "blogs",
+    "scrapping"
+  ],
+  "author": "alireza tanoomandian",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.23.3",
+    "mongoose": "^5.9.15"
+  }
+}

@@ -1,0 +1,38 @@
+.Main {
+    width: 1250px;
+    height: auto;
+    min-height: 120px;
+    margin: 5px auto;
+    direction: rtl;
+}
+
+.Heading h2 {
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px 5px 10px 5px;
+}
+
+.Heading {
+    display: flex;
+}
+
+.BtnContainer {
+    margin: 15px 5px 10px 5px;
+}
+
+.ActionBtn {
+    padding: 5px 15px;
+    font-family: "iransans";
+    font-size: 18px;
+    border: 2px solid #e50000;
+    color: #e50000;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.Divider {
+    width: 1250px;
+    margin: 2px auto;
+}
